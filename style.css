@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif; background-color:rgb(132, 168, 173);
+}
+
+/* Style the header */
+header {
+  background-color: rgb(204, 122, 28);
+  padding: 10px;
+  text-align: left;
+  font-size: 35px;
+  color: white;
+}
+
+.column {
+  float: left;
+  width: 30%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  padding: 20px;
+  width: 15%;
+  height: 300px; /* changes height of box */
+  background: rgb(182, 194, 20);
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/*creates a black box when hovering over navigation bat*/
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 85%;
+  height: 300px; /* changes height of box */
+  background-color: #d13b3b;
+  color: white;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Style the footer */
+footer {
+  background-color: rgb(204, 122, 28);
+  padding: 80px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other*/
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Responsive layout - makes the logo and title stack */
+@media (max-width: 600px) {
+  .column {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Responsive layout - makes the logo and title stack */
+/*@media (max-width: 600px) {
+  .article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
