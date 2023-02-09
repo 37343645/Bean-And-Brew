@@ -1,14 +1,16 @@
 * {
   box-sizing: border-box;
 }
-
+/*
 body {
-  font-family: Arial, Helvetica, sans-serif; background-color:rgb(132, 168, 173);
+  font-family: Arial, Helvetica, sans-serif; background-color:rgb(94, 63, 43);
 }
+This is the old background it chnages the background colour but we are using an image for the background which is in seperate pages
 
+*/
 /* Style the header */
 header {
-  background-color: rgb(204, 122, 28);
+  background-color: rgb(64, 52, 38);
   padding: 10px;
   text-align: left;
   font-size: 35px;
@@ -28,12 +30,13 @@ header {
 }
 
 /* Create two columns/boxes that floats next to each other */
+
 nav {
   float: left;
   padding: 20px;
   width: 15%;
   height: 300px; /* changes height of box */
-  background: rgb(182, 194, 20);
+  background: rgb(64, 61, 59);
 }
 
 /* Style the list inside the menu */
@@ -42,7 +45,7 @@ nav ul {
   padding: 0;
 }
 
-/*creates a black box when hovering over navigation bat*/
+/*creates a black box when hovering over navigation bar*/
 li a {
   display: block;
   color: white;
@@ -50,9 +53,9 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
 }
-
+/*makes the colour of the navigation black*/
 li a:hover {
-  background-color: #111;
+  background-color: rgb(17, 17, 17);
 }
 
 article {
@@ -60,7 +63,7 @@ article {
   padding: 20px;
   width: 85%;
   height: 300px; /* changes height of box */
-  background-color: #d13b3b;
+  background-color: rgb(94, 63, 43);
   color: white;
 }
 
@@ -74,13 +77,13 @@ section::after {
 
 /* Style the footer */
 footer {
-  background-color: rgb(204, 122, 28);
+  background-color: rgb(64, 52, 38);
   padding: 80px;
   text-align: center;
   color: white;
 }
 
-/* Responsive layout - makes the two columns/boxes stack on top of each other*/
+/* Responsive layout - makes the two columns/boxes stack on top of each other article and navigation*/
 @media (max-width: 600px) {
   nav, article {
     width: 100%;
@@ -96,9 +99,16 @@ footer {
   }
 }
 
-/* Responsive layout - makes the logo and title stack */
-/*@media (max-width: 600px) {
+/* Responsive layout - makes articles stack on top of each other */
+@media (max-width: 600px) {
   .article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  footer, article {
     width: 100%;
     height: auto;
   }
